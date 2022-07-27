@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalendarTodo v2.0</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+   <header class="header">
+    <h1 class="header__title">Блокнот</h1>
+    <ul class="header_list1">
+      <li><a href="" class="header_link">Google</a></li>
+      <li><a href="" class="header_link">GitHub</a></li>
+      <li><a href="" class="header_link">Codewars</a></li>
+      <li><a href="" class="header_link">Telegram</a></li>
+   </ul>
+    <div class="container">
+      <div class="header_body">
+         <div class="btn"><div class="burger__block"></div>
+         <div class="burger__block"></div>
+         <div class="burger__block"></div>
+         </div>
+         <div class="header_menu">
+            <ul class="header_list">
+               <li><a href="" class="header_link">Google</a></li>
+               <li><a href="" class="header_link">GitHub</a></li>
+               <li><a href="" class="header_link">Codewars</a></li>
+               <li><a href="" class="header_link">Telegram</a></li>
+            </ul>
+         </div>
+      </div>
+      </div>
+   
+   </header>
+    <main class="main">
+     
+      <section class="todo">
+        <input type="text" class="non">
+        <div class="create-new-todo">
+        
+          <form action="">
+            <input type="text" class="message" placeholder="Введіть завдання" autocomplete="" onfocus="this.value=''" >
+            <button class="add" type="submit">Добавити</button>
+          </form>
+        </div>
+        <button class="btn__up">Сброс</button>
+        <h2>Список завдань:</h2>
+        <div class="todo__list">
+
+        </div>
+      </section>
+      <section class="calendar">
+      
+        <div class="hour">
+          <span class="hour1"><span class="">hh</span> </span><span class="minute"></span><span class="secund">ss</span>
+       </div>
+        <div class="calendar__body">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">
+              <button class="back">
+                <img src="images/Shape (1).svg" alt="" class="img__back" />
+              </button>
+              <div class="month__show">
+                <h1></h1>
+                <p></p>
+              </div>
+              <button class="next">
+                <img src="images/Shape 2.svg" alt="" class="img__next" />
+              </button>
+            </div>
+          </div>
+          <div class="days">
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+            <div>Sun</div>
+          </div>
+          <table class="weekdays">
+            <tbody class="ver"></tbody>
+          </table>
+        </div>
+        
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="instruc">Для збереження чи перегляду задач натисніть кнопку сброс потім виберіть дату чи дати.</div>
+     <div class="footer__title"><h2 class="footer__title2">Chorniy Alexandr 2022</h2></div>
+    </footer>
+      
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>

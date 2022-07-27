@@ -1,0 +1,502 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+ 
+  
+}
+body{
+  height: 100%;
+  width: 100%;
+  max-width: 1920px;
+  background: linear-gradient(to top, rgb(241, 241, 112) 50%, rgb(92, 92, 243) 50%);
+  
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main {
+  padding: 15px;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+ 
+  color:black;
+  flex-wrap: wrap;
+  
+  height: 100%;
+}
+
+
+
+/*--------------------------------------------------------*/
+/*----------------------header------------------------------*/
+.header{
+  width: 100%;
+  height: 18%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.header__title{
+  margin: 0% 0% 0% 17%;
+  font-size: 30px;
+}
+/*--------------------------------------------------------*/
+.todo {
+  margin: 0 auto;
+  flex: 1;
+  color: black;
+}
+
+.calendar {
+  justify-content: center;
+  margin-top: 127px;
+  flex: 1;
+  
+}
+
+.class{
+color:black;
+}
+
+
+.month {
+  width: 100%;
+  height: 12rem;
+
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays td {
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #262626;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #167e56;
+}
+
+tr {
+  display: flex;
+}
+
+td {
+  height: 6rem;
+}
+
+td:hover {
+  background-color: blue;
+}
+
+.days {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.today {
+  background: blue;
+}
+
+.aside {
+  display: flex;
+  justify-content: end;
+}
+
+.date {
+  display: flex;
+  gap:19%;
+  margin-top: 5rem;
+}
+@media (max-width: 1100px) {
+  .calendar {
+    margin: 1% 0% 45% 0%;
+    justify-content: center;
+    margin-top: 127px;
+    flex: 1;
+}
+  .calendar__body {
+    margin: -22px 0px 286px 90px;
+}
+  .date {
+    justify-content: start;
+    margin: 0% 25% 0% -1%;
+}
+  body{
+    width: 100%;
+    
+   box-sizing: border-box;  
+}
+.main {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+.todo {
+  padding-top: 273px;
+ 
+}
+
+}
+
+
+.ver {
+  margin-top: 22rem;
+  align-items: center;
+}
+
+.month__show {
+  display: flex;
+}
+
+
+
+.next {
+  background: none;
+  border: none;
+}
+
+.back {
+  background: none;
+  border: none;
+}
+
+.calendar__body {
+  margin: -22px 0px 0px 90px;
+}
+
+li{
+  font-size: 25px;
+  color:red;
+  
+}
+
+
+
+
+.instr {
+  padding-top: 50px;
+}
+h2{
+margin: 24px 0px 39px 228px;
+font-size: 25px;
+}
+
+.message{
+  border-radius: 5px;
+  background-color: #cae8db;
+  height: 30px;
+  margin: 70px 0px 0px 182px;
+  width: 200px;
+}
+
+
+
+
+.todo__list{
+  height: 500px;
+  padding: 0px 0px 0px 0px;
+  overflow: scroll;
+  font-size: 20px;
+}
+
+
+.add{
+  background-color: #167e56;
+  width: 90px;
+  height: 30px;
+}
+.btn__up{
+  border-radius: 5px;
+  background-color: #167e56;
+  width: 60px;
+  height: 30px;
+  margin: 39px 0px 0px 476px;
+}
+@media (max-width: 624px) {
+  .btn__up {
+    margin: 0 auto;
+  }
+}
+
+.instr li{
+  margin-top: 5px;
+  list-style: none;
+  font-size: 20px;
+  color: black;
+}
+tr:hover{
+  cursor: pointer;
+
+}
+
+
+.text333{
+  width: 10px;
+}
+
+.create-new-todo{
+  margin: 0px 0px 0px 0px;
+}
+@media (max-width: 624px) {
+  .weekdays td {
+    width: calc(32.2rem / 7);
+  }
+  .days div {
+    width: calc(28.2rem / 7);
+  }
+  
+}
+@media (max-width: 515px) {
+  .weekdays td {
+    width: calc(22.2rem / 7);
+}
+.days div {
+  width: calc(18.2rem / 7);
+}
+.calendar__body {
+  margin: -22px 0px 0px 77px;
+}
+.month {
+  width: 57%;
+  margin: 0% -6% 0% -29%;
+}
+.month h1 {
+  font-size: 2.7rem;
+}
+.month p {
+  font-size: 2.7rem;
+  margin-left: 1rem;
+}
+.create-new-todo {
+  margin: 0px 0px 0px -181px;
+}
+h2 {
+  margin: 24px 0px 35px 0px;
+  font-size: 25px;
+}
+}
+.taskd{
+ 
+}
+._active{
+ background-color: red;
+}
+
+/*--------------burger-------------*/
+
+.container {
+   max-width: 1200px;
+   margin: 0px auto;
+   display: flex;
+   padding: 0px 30px;
+   align-items: center;
+   justify-content: space-between;
+}
+.header_body {
+  display: none;
+ position: absolute;
+ 
+ top: 0;
+ right:33px;
+}
+.header_list1{
+  display: flex;
+  gap: 21%;
+  margin: 0% 0% 0% 25%;
+}
+@media (max-width: 680px) {
+  .header_body {
+    display: block;
+  }
+  .header_list1 {
+    display: none;
+}
+}
+.btn {
+  margin:70% 0% 0% 0% ;
+  align-items: end;
+   
+  
+   position: relative;
+   
+   width: 70px;
+   height: 70px;
+
+}
+.header_menu {
+   position: fixed;
+   top:0;
+   right: -100%;
+   width: 100%; 
+   
+   background: teal;
+   transition: left 0.3s ease 0s;
+   overflow: auto;
+   width: 50%;
+   height: 100%;
+}
+.header_menu._active {
+  height: 250px;
+  right: 0;
+}
+
+.header_list {
+margin: 44% 0% 0% 19%;
+}
+
+.header_link {
+   color: brown;
+   font-size: 20px;
+   margin-top: 50px;
+   text-decoration: none;
+}
+
+li {
+   list-style: none;
+}  
+
+.burger__block{
+  background-color:grey;
+  margin-top: 10px;
+  width: 70px;
+  height: 5px;
+ 
+}
+._actve {
+  
+ 
+  position: relative;
+  z-index: 5;
+  width: 70px;
+  height: 70px;
+
+}
+/*--------------burger-------------*/
+.hour1{
+  font-size: 50px;
+  color: yellowgreen;
+}
+.minute{
+  font-size: 50px;
+  color: red;
+}
+.secund{
+  font-size: 50px;
+}
+.hour{
+ margin: -10% 0% 14% 34%;
+}
+.ty{
+  font-size: 40px;
+  background-color: #cae8db;
+}
+.ghj{
+  font-size: 50px;
+}
+
+.header_link1{
+  width: 50px;
+  background-color: blue;
+}
+
+
+.instruc{
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+
+.footer__title{
+  
+  font-size: 18px;
+  margin: 0% 0% 0% 0%;
+  background-color: rgb(36, 172, 239);
+}
+
+
+.footer__title2{
+  margin: 0% 0% 0% 0%;
+  text-align: center;
+}
+.non{
+ opacity: 0;
+}
+
+@media (max-width: 1100px) {
+  .header_list1{
+    display: none;
+  }
+
+  .header_body {
+    display: block;
+}
+}
