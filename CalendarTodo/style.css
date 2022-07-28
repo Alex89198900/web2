@@ -406,7 +406,7 @@ h2 {
    height: 100%;
 }
 .header_menu._active {
-  height: 250px;
+  height: 320px;
   right: 0;
 }
 
@@ -498,5 +498,58 @@ li {
 
   .header_body {
     display: block;
+}
+}
+
+
+@media (max-width: 624px) {
+  .instruc {
+    font-size: 20px;
+    margin: 7% 0% 5% 0%;
+}
+}
+@media (max-width: 517px) {
+  .instruc {
+    
+    font-size: 15px;
+    margin: 17% 0% 5% 0%;
+}
+.header_list {
+  /* margin: 44% 0% 0% 19%; */
+  padding: 50px 50px;
+}
+}
+
+@media (max-width: 414px){
+.instruc {
+    font-size: 15px;
+    margin: 49% 0% 5% 4%;
+}
+}
+
+@media (max-width: 515px){
+.month {
+    font-size: 3px;
+    width: 57%;
+    margin: 0% -6% 0% -20%;
+}
+.month h1 {
+  font-size: 24px;
+}
+.month p {
+  font-size: 24px;
+  margin-left: 1rem;
+}
+.calendar__body {
+  margin: -22px 0px 0px 47px;
+}
+.hour {
+  margin: -10% 0% 14% 16%;
+}
+}
+@media (max-width: 517px){
+.header_list {
+    margin: 52% 0% 0% -2%;
+    padding: 50px 50px;
 }
 }

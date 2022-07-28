@@ -179,7 +179,7 @@ function displayTodoList(mouseClickEvent) {
 function createTable() {
   calendar.innerHTML = ''
   let dateToShow = new Date(showYear, showMonth, 1)
-  let t = dateToShow.getDay() - 1
+  let t = dateToShow.getDay() - 2
 console.log(t)
   if (t < 0) {
     t = 6
